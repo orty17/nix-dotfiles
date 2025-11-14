@@ -44,10 +44,6 @@
       ! set -q MANPATH; and set MANPATH \'\'; set -gx MANPATH "/opt/homebrew/share/man" $MANPATH;
       ! set -q INFOPATH; and set INFOPATH \'\'; set -gx INFOPATH "/opt/homebrew/share/info" $INFOPATH;
 
-      # Volta
-      set -gx VOLTA_HOME $HOME/.volta
-      fish_add_path $VOLTA_HOME/bin
-
       # Go Binaries
       fish_add_path $GOPATH/bin
 
@@ -60,7 +56,9 @@
 
     plugins = [
       { name = "fzf"; src = pkgs.fishPlugins.fzf-fish.src; }
-      { name = "async-prompt"; src = pkgs.fishPlugins.async-prompt; }
+      { name = "async-prompt"; src = pkgs.fishPlugins.async-prompt; } # Make your prompt asynchronous
+      { name = "nvm"; src = pkgs.fishPlugins.nvm; } # Node.js version manager lovingly made for Fish
+      { name = "Done"; src = pkgs.fishPlugins.Done; } # Automatically receive notifications after a long process finishes
     ];
 
     functions = {
@@ -98,9 +96,9 @@
     "cat" = "bat -pp";
     "python" = "python3";
     "pip" = "pip3";
-    "cdcore" = "cd $HOME/Workspace/shopware-business-platform/Components/Core";
-    "cdfrontend" = "cd $HOME/Workspace/shopware-business-platform/Components/Frontend";
-    "cdaccount" = "cd $HOME/Workspace/shopware-business-platform/Components/Account2";
+    "cdcore" = "cd $HOME/work/shopware-business-platform/Components/Core";
+    "cdfront" = "cd $HOME/wrok/shopware-business-platform/Components/Frontend";
+    "cdacc" = "cd $HOME/wrok/shopware-business-platform/Components/Account2";
     "ls" = "eza --icons --group --group-directories-first";
     "ll" = "eza --icons --group --group-directories-first -l";
     "hms" = "sudo darwin-rebuild switch --flake $HOME/.config/nix-dotfiles/ --show-trace";
