@@ -97,8 +97,8 @@
     "python" = "python3";
     "pip" = "pip3";
     "cdcore" = "cd $HOME/work/shopware-business-platform/Components/Core";
-    "cdfront" = "cd $HOME/wrok/shopware-business-platform/Components/Frontend";
-    "cdacc" = "cd $HOME/wrok/shopware-business-platform/Components/Account2";
+    "cdfront" = "cd $HOME/work/shopware-business-platform/Components/Frontend";
+    "cdacc" = "cd $HOME/work/shopware-business-platform/Components/Account2";
     "ls" = "eza --icons --group --group-directories-first";
     "ll" = "eza --icons --group --group-directories-first -l";
     "hms" = "sudo darwin-rebuild switch --flake $HOME/.config/nix-dotfiles/ --show-trace";

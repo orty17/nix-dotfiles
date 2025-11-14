@@ -1,7 +1,7 @@
 ---
 alwaysApply: true
 ---
-This project is the Mac OS System configuration for the Macbook from Robin, always running the latest Mac OS Version. This script utilizes Nix to setup a Mac Os System with the mandatory functions a developer needs in his day to day work. 
+This project is the Mac OS System configuration for the Macbook from Lennard, always running the latest Mac OS Version. This script utilizes Nix to setup a Mac Os System with the mandatory functions a developer needs in his day to day work.
 
 The project is splitted apart into home and system
 - Home contains specific feature configurations and the "SW-RR2KQL7J5G.nix" file. "SW-RR2KQL7J5G" is the computer name.
