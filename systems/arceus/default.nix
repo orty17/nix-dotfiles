@@ -13,18 +13,18 @@
   ];
 
   system.stateVersion = 5;
-  system.primaryUser = "R.Schulte";
+  system.primaryUser = "l.ortmeyer";
 
   ids.gids.nixbuild = 30000;
 
-  users.users."R.Schulte" = {
-    home = "/Users/R.Schulte";
+  users.users."l.ortmeyer" = {
+    home = "/Users/l.ortmeyer";
     shell = "${pkgs.fish}/bin/fish";
   };
 
-  home-manager.users."R.Schulte" = {
+  home-manager.users."l.ortmeyer" = {
     imports = [
-      ../../home/arceus.nix
+      ../../home/SW-RR2KQL7J5G.nix
     ];
   };
 

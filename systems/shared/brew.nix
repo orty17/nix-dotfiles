@@ -20,13 +20,13 @@
       "yt-dlp"
       "lazygit"
       "mise"
+      "gh"
     ];
 
     casks = [
       "orbstack"
       "insomnia"
       "capcut"
-      "minecraft"
       "lm-studio"
       "ghostty"
       "hammerspoon"

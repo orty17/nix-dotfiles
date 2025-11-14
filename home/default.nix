@@ -13,7 +13,6 @@
     ./features/php
     ./features/python
     ./features/ghostty
-    ./features/volta
   ];
 
   # This value determines the Home Manager release that your configuration is
@@ -26,7 +25,7 @@
   home.stateVersion = "23.05"; # Please read the comment before changing.
 
   home.sessionVariables = {
-    EDITOR = "nvim";
+    EDITOR = "nano";
   };
 
   # Let Home Manager install and manage itself.
