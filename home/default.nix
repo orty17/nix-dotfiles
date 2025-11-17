@@ -13,6 +13,7 @@
     ./features/php
     ./features/python
     ./features/ghostty
+    ./features/volta
   ];
 
   # This value determines the Home Manager release that your configuration is
