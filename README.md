@@ -22,12 +22,12 @@ git clone git@github.com:kevinrudde/nix-dotfiles.git ~/.config/nix-dotfiles
 
 2. Initialize the Nix setup with
 ```bash
-nix run nix-darwin -- switch --flake ~/.config/nix-dotfiles
+sudo nix run nix-darwin -- switch --flake ~/.config/nix-dotfiles
 ```
 
 3. If you want to apply your changes in the future you need to run
 ```bash
-darwin-rebuild switch --flake ~/.config/nix-dotfiles/ --show-trace
+sudo darwin-rebuild switch --flake ~/.config/nix-dotfiles/ --show-trace
 ```
  
 ## MacOS Settings

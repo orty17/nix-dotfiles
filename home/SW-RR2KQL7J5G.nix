@@ -7,7 +7,6 @@
 {
   imports = [
     ./default.nix
-    ./features/hammerspoon
   ];
 
   home.username = "l.ortmeyer";

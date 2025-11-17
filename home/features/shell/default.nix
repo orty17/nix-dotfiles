@@ -57,8 +57,6 @@
     plugins = [
       { name = "fzf"; src = pkgs.fishPlugins.fzf-fish.src; }
       { name = "async-prompt"; src = pkgs.fishPlugins.async-prompt; } # Make your prompt asynchronous
-      { name = "nvm"; src = pkgs.fishPlugins.nvm; } # Node.js version manager lovingly made for Fish
-      { name = "Done"; src = pkgs.fishPlugins.Done; } # Automatically receive notifications after a long process finishes
     ];
 
     functions = {
