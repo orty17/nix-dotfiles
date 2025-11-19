@@ -63,7 +63,7 @@
       { name = "async-prompt"; src = pkgs.fishPlugins.async-prompt; } # Make your prompt asynchronous
       {
         name = "plugin-git";
-        src = fetchFromGitHub {
+        src = pkgs.fetchFromGitHub {
                   owner = "jhillyerd";
                   repo = "plugin-git";
                   rev = "refs/tags/v0.3";
