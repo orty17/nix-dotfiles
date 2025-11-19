@@ -61,7 +61,15 @@
     plugins = [
       { name = "fzf"; src = pkgs.fishPlugins.fzf-fish.src; }
       { name = "async-prompt"; src = pkgs.fishPlugins.async-prompt; } # Make your prompt asynchronous
-      { name = "plugin-git"; src = pkgs.fishPlugins.plugin-git.src; } # Git Aliases
+      {
+        name = "plugin-git";
+        src = fetchFromGitHub {
+                  owner = "jhillyerd";
+                  repo = "plugin-git";
+                  rev = "refs/tags/v0.3";
+                  hash = "sha256-p7vvwisu3mvVOE1DcALbzuGJqWBcE1h71UjaopGdxE0=";
+                };
+       } # Git Aliases
       { name = "fish-you-should-use"; src = pkgs.fishPlugins.fish-you-should-use; } # It says when you should use an alias
     ];
 
