@@ -61,6 +61,7 @@
     plugins = [
       { name = "fzf"; src = pkgs.fishPlugins.fzf-fish.src; }
       { name = "async-prompt"; src = pkgs.fishPlugins.async-prompt; } # Make your prompt asynchronous
+      { name = "plugin-fish"; src = pkgs.fishPlugins.plugin-git; } # Make your prompt asynchronous
     ];
 
     functions = {
@@ -104,5 +105,11 @@
     "ls" = "eza --icons --group --group-directories-first";
     "ll" = "eza --icons --group --group-directories-first -l";
     "hms" = "sudo darwin-rebuild switch --flake $HOME/.config/nix-dotfiles/ --show-trace";
+
+    "clearcache" = "cdcore; bin/console cache:clear";
+    "cacheclear" = "clearcache";
+    "cc" = "clearcache";
+    "cct" = "cdcore; bin/console cache:clear --env=test";
+
   };
 }
