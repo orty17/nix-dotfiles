@@ -4,7 +4,6 @@
     fzf
     fd
     bat
-    fishPlugins.plugin-git
   ];
 
   programs.direnv = {
@@ -64,9 +63,9 @@
       { name = "async-prompt"; src = pkgs.fishPlugins.async-prompt; } # Make your prompt asynchronous
       {
         name = "plugin-git";
-        src = pkgs.fishPlugins.plugin-git;
+        src = pkgs.fishPlugins.plugin-git.src;
        } # Git Aliases
-      { name = "fish-you-should-use"; src = pkgs.fishPlugins.fish-you-should-use; } # It says when you should use an alias
+      { name = "fish-you-should-use"; src = pkgs.fishPlugins.fish-you-should-use.src; } # It says when you should use an alias
     ];
 
     functions = {
