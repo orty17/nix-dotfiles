@@ -62,7 +62,7 @@
       { name = "fzf"; src = pkgs.fishPlugins.fzf-fish.src; }
       { name = "async-prompt"; src = pkgs.fishPlugins.async-prompt; } # Make your prompt asynchronous
       { name = "plugin-fish"; src = pkgs.fishPlugins.plugin-git; } # Git Aliases
-      { name = "fish-you-should-use"; src = pkgs.fishPlugins.fish-you-should-uses; } # Git Aliases
+      { name = "fish-you-should-use"; src = pkgs.fishPlugins.fish-you-should-use; } # Git Aliases
     ];
 
     functions = {
