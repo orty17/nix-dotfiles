@@ -63,12 +63,7 @@
       { name = "async-prompt"; src = pkgs.fishPlugins.async-prompt; } # Make your prompt asynchronous
       {
         name = "plugin-git";
-        src = pkgs.fetchFromGitHub {
-                  owner = "jhillyerd";
-                  repo = "plugin-git";
-                  rev = "refs/tags/v0.3";
-                  hash = "sha256-p7vvwisu3mvVOE1DcALbzuGJqWBcE1h71UjaopGdxE0=";
-                };
+        src = pkgs.fishPlugins.plugin-git.src;
        } # Git Aliases
       { name = "fish-you-should-use"; src = pkgs.fishPlugins.fish-you-should-use; } # It says when you should use an alias
     ];
