@@ -10,6 +10,7 @@
     ./features/nvim
     ./features/tmux
     ./features/go
+    ./features/nano
     ./features/php
     ./features/python
     ./features/ghostty
