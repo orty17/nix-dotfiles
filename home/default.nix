@@ -15,7 +15,6 @@
     ./features/python
     ./features/ghostty
     ./features/volta
-    ./features/skhd
   ];
 
   # This value determines the Home Manager release that your configuration is
