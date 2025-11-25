@@ -7,7 +7,9 @@
   services.skhd = {
     enable = true;
     package = pkgs.skhd;
-    skhdConfig = builtins.readFile ./skhdrc;
+    skhdConfig = ''
+        ralt - l : pmset displaysleepnow
+    '';
   };
 
   # Override launchd environment to set SHELL to dash to improve performance

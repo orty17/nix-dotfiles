@@ -10,6 +10,7 @@
     ../shared/brew.nix
     ../shared/system.nix
     ../shared/fonts.nix
+    ../shared/skhd.nix
   ];
 
   system.stateVersion = 5;
