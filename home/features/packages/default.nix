@@ -18,6 +18,7 @@
     mysql84
     cargo
     nmap
+    gnupg
 
     docker-client
     docker-buildx
